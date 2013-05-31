@@ -21,6 +21,7 @@ $(document).ready(function(){
   function scrollAnchor(idName){
   var aTag = $("div[name='" + idName + "']");
     $('body').animate({ scrollTop: aTag.offset().top}, 'slow');
+    $('#tags').css('marginTop', 0);
   }
 
     $('#resume').click(function(){
