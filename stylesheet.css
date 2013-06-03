@@ -8,6 +8,12 @@
   margin-left: 10%;
 }
 
+ul {
+  list-style-type: square;
+  line-height: 1.5;
+  font-family: 'PT Serif', serif;
+}
+
 body {
   background: #FFFCFF;
   width: 100%
@@ -26,6 +32,7 @@ span {
 #me h1 {
   font-family: 'Glegoo', serif;
 }
+
 #me img {
   border: 7px solid black;
   border-radius: 5px;
@@ -70,6 +77,12 @@ span {
   font-size: 1.5em;
   font-weight: 700;
   color: black;
+}
+
+#resumesec h1 {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  font-weight: 900;
 }
 
 #projsec #setup { 
