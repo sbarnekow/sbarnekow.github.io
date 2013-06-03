@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   function scrollAnchor(idName){
   var aTag = $("div[name='" + idName + "']");
-    $('body').animate({ scrollTop: aTag.offset().top}, 'slow');
+    $('body').animate({ scrollTop: aTag.offset().top - 100}, 'slow');
     $('#tags').css('marginTop', 0);
   }
 
