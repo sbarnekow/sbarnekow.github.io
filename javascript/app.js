@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  mixpanel.track_links("#resume #philosophy #projects #contact", "div #tags click")
+  mixpanel.track_links("#resume #philosophy #projects #contact", "click")
   mixpanel.track("scrollAnchor");
 
   $('a').on('click', function(){
