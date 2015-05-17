@@ -1,5 +1,6 @@
 $(document).ready(function(){
   mixpanel.track_links("#resume #philosophy #projects #contact", "div #tags click")
+  mixpanel.track("scrollAnchor");
 
   $('a').on('click', function(){
     $('#sticky').sticky({ topSpacing: 0});
@@ -16,7 +17,7 @@ $(document).ready(function(){
   userFeed.run();
 
   function scrollAnchor(idName){
-  var aTag = $("div[name='" + idName + "']");
+    var aTag = $("div[name='" + idName + "']");
     $('body').animate({ scrollTop: aTag.offset().top - 100}, 'slow');
     $('#tags').css('marginTop', 0);
   }
