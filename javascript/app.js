@@ -1,8 +1,5 @@
 $(document).ready(function(){
-  // $('iframe').load(function() {
-  //     this.style.height =
-  //     this.contentWindow.document.body.offsetHeight + 'px';
-  // });
+  mixpanel.track_links("#resume #philosophy #projects #contact", "click")
 
   $('a').on('click', function(){
     $('#sticky').sticky({ topSpacing: 0});
